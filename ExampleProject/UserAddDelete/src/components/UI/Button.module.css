@@ -1,0 +1,26 @@
+.btn {
+    width: max-content;
+    margin-top: 15px;
+    padding: 9px 20px;
+    border: 2px solid #fff;
+    font-family: inherit;
+    background-color: #bbabec;
+    font-size: 16px;
+    color: black;
+    cursor: pointer;
+}
+footer .btn {
+    color: #40005d;
+}
+.btn:hover {
+    background-color: rgba(187,171,236,.8);
+    color: black;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}

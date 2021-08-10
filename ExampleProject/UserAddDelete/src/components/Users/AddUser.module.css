@@ -1,0 +1,34 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    width: 80%;
+}
+
+.labels {
+    font-size: 18px;
+    margin: 0;
+}
+
+.inputs {
+    margin: 10px 0;
+    padding: 5px 10px;
+    outline: none;
+    font-family: inherit;
+    border: 0;
+    background-color: #a892ee;
+    font-size: 18px;
+    -webkit-appearance: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number] {
+     -moz-appearance: textfield;
+}
+.inputs:active,
+.inputs:focus {
+    outline: none;
+}

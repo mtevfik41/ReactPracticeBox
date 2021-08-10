@@ -1,0 +1,26 @@
+.userList {
+    background: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,.26);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 40px auto;
+    max-width: 800px;
+    width: auto;
+}
+
+.userList ul {
+    list-style-type: none;
+    padding: 0;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.userList ul li {
+    border-bottom: 1px solid #eee;
+}
+
+.userList ul li p {
+    margin: 10px 0;
+}
