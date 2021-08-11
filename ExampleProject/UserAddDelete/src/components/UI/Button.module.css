@@ -9,11 +9,13 @@
     color: black;
     cursor: pointer;
 }
+
 footer .btn {
     color: #40005d;
 }
+
 .btn:hover {
-    background-color: rgba(187,171,236,.8);
+    background-color: rgba(187, 171, 236, .8);
     color: black;
 }
 
