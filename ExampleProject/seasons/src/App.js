@@ -1,5 +1,6 @@
 import React, {Fragment, useEffect, useState} from 'react';
 import './App.css';
+import SeasonDisplay from './components/SeasonDisplay';
 
 const App = () => {
   const [lat, setLat] = useState(null);
@@ -18,17 +19,11 @@ const App = () => {
         {timeout: 10000},
     );
   }, []);
-
   return (
       <div>
-        {(!lat && !lot && !error) && <h1>Loading</h1>}
-        {error && <h1>User denied GeoLocation</h1>}
-        {(lat && lot) && (
-            <Fragment>
-              <h1>Latitude: {lat}</h1>
-              <h1>Longtitude: {lot}</h1>
-            </Fragment>
-          )}
+        <Fragment>
+          <SeasonDisplay lat={lat} lot={lot} error={error}/>
+        </Fragment>
       </div>
   );
 };
