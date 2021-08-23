@@ -2,7 +2,7 @@ import React, {Fragment} from 'react';
 import {FaBars} from 'react-icons/fa';
 import {Nav,NavLogo,NavbarContainer,MobileIcon,NavMenu,NavLinks,NavItem,NavBtnLink,NavBtn} from './NavbarElements';
 
-const Navbar = () => {
+const Navbar = ({toggle}) => {
   return (
       <Fragment>
         <Nav>
@@ -10,8 +10,8 @@ const Navbar = () => {
             <NavLogo to="/">
               <span className="fromLeft">dolla</span>
             </NavLogo>
-            <MobileIcon>
-              <FaBars/>
+            <MobileIcon onClick={toggle}>
+              <FaBars />
             </MobileIcon>
             <NavMenu>
               <NavItem>
